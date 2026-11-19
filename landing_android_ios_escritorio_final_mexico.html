@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Una lectura de la participación de Android y iOS, el acceso digital y el mercado de smartphones en México.">
+<title>Android vs. iOS en México — Escritorio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080f1d;--surface:#111f32;--surface2:#162840;--line:#2b405a;--text:#f3f7fd;--muted:#abbcd0;--green:#42d999;--blue:#62aaff;--pale:#ddebff;--gold:#ffc76a;--max:1248px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit} .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,15,29,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(171,188,208,.14)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:17px;font-weight:800;letter-spacing:.06em;text-decoration:none}.navlinks{display:flex;gap:26px}.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:9px 12px;border-radius:10px}
+.hero{padding:100px 0 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(42px,5.4vw,72px);line-height:1.04;letter-spacing:-.055em;margin:18px 0 24px}.hero p{font-size:19px;color:var(--muted);max-width:680px}.actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:30px}.button{display:inline-block;background:var(--pale);color:var(--bg);padding:14px 20px;border-radius:11px;text-decoration:none;font-weight:800;font-size:14px}.smallnote{font-size:12px;color:var(--muted)}
+.panel,.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}.panel{padding:30px}.panel-label{font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:800;margin-bottom:24px}.barrow{margin:20px 0}.barhead{display:flex;justify-content:space-between;gap:16px;margin-bottom:9px;font-weight:700}.barhead strong{font-size:21px}.track{height:13px;background:var(--line);border-radius:20px;overflow:hidden}.fill{height:100%;border-radius:20px}.android{background:var(--green)}.ios{background:var(--blue)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px auto 0}.stat{padding:22px;background:var(--surface2);border-radius:16px}.stat b{display:block;font-size:clamp(24px,3vw,38px);line-height:1.2}.stat span{display:block;font-size:13px;margin-top:8px}.stat small{color:var(--muted);font-size:11px}
+section{padding:92px 0 0}.section-head{max-width:760px;margin-bottom:28px}.num{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}.section-head p{color:var(--muted);font-size:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card h3{font-size:19px;margin:4px 0 10px}.card p{color:var(--muted);font-size:14px;margin:0}.tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--muted)}.big{font-size:clamp(40px,5vw,58px);font-weight:800;letter-spacing:-.05em;line-height:1.1;margin:16px 0}.green{color:var(--green)}.blue{color:var(--blue)}.gold{color:var(--gold)}
+.callout{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:26px;margin-top:16px}.callout h3{font-size:22px;margin:0 0 8px}.callout p{color:var(--muted);margin:0;font-size:14px}
+.splitbar{height:18px;background:var(--line);border-radius:30px;overflow:hidden;display:flex;margin:20px 0 10px}.splitbar span:first-child{background:var(--green)}.splitbar span:last-child{background:var(--blue)}
+.note{border-left:3px solid var(--gold);padding:16px 18px;background:rgba(255,199,106,.07);border-radius:0 12px 12px 0;color:var(--muted);font-size:13px;margin-bottom:16px}.source-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.source a{color:var(--blue);font-size:12px;text-decoration:none;overflow-wrap:anywhere}.source a:hover{text-decoration:underline}.source p{margin:8px 0 12px}
+.conclusion{margin-top:90px;background:#14263d;border:1px solid var(--line);border-radius:24px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}.conclusion h2{font-size:clamp(34px,4vw,48px);line-height:1.05;margin:12px 0}.conclusion p{color:var(--muted);max-width:700px;margin:0}.credits{padding:32px 0 48px;color:var(--muted);font-size:12px}.credits strong{color:var(--text)}
+footer{border-top:1px solid rgba(171,188,208,.14);margin-top:55px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:70px}.stats,.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr 1fr}.navlinks{gap:14px}.navlinks a{font-size:12px}}
+@media(max-width:620px){.wrap{width:min(100% - 32px,var(--max))}.nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:var(--bg);padding:18px 22px 22px;border-bottom:1px solid var(--line);flex-direction:column}.navlinks.open{display:flex}.hero{padding:58px 0 38px;gap:30px}.hero h1{font-size:43px}.hero p{font-size:16px}.panel,.card{padding:21px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:16px}.stat b{font-size:27px}.grid3,.grid2,.grid4,.source-list{grid-template-columns:1fr}.section-head h2{font-size:32px}section{padding-top:68px}.conclusion{margin-top:65px;padding:26px;display:block}.conclusion .button{margin-top:22px}.barhead strong{font-size:18px}}
+
+/* Laboratorio interactivo */
+.playground{background:linear-gradient(135deg,#122b3d,#13233a 65%,#172b45);border:1px solid #35516d;border-radius:24px;padding:clamp(22px,4vw,38px);overflow:hidden}
+.playground-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.playground-top h3{font-size:clamp(22px,3vw,30px);margin:8px 0}.playground-top p{color:var(--muted);max-width:680px;margin:0;font-size:14px}
+.live-pill{white-space:nowrap;border:1px solid rgba(66,217,153,.45);color:var(--green);border-radius:30px;padding:7px 11px;font-size:10px;font-weight:800;letter-spacing:.08em}
+.play-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}.control-card,.result-card{background:rgba(5,14,27,.48);border:1px solid rgba(171,188,208,.16);border-radius:17px;padding:22px}
+.control-card label{display:flex;justify-content:space-between;gap:12px;font-size:13px;font-weight:700;margin-bottom:12px}.control-card label strong{font-size:19px;color:var(--green);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--green);cursor:pointer}.range-ends{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:3px}.sample-label{margin-top:27px!important}.sample-label strong{color:var(--pale)!important;font-size:17px!important}
+.preset-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.preset{background:#203751;border:1px solid #3b5671;color:var(--text);border-radius:9px;padding:9px 12px;font:600 11px Inter,Arial;cursor:pointer}.preset:hover,.preset:focus-visible{border-color:var(--green);outline:none}
+.result-card>.tag{color:var(--muted)}.scenario-bars{margin:22px 0}.scenario-row{margin:18px 0}.scenario-row>div:first-child{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:14px;font-weight:700}.scenario-row b{font-size:19px;font-variant-numeric:tabular-nums}.scenario-row .track{height:12px}.scenario-row small{display:block;text-align:right;color:var(--muted);font-size:11px;margin-top:5px}
+.result-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.result-metrics>div{background:#1a3049;padding:14px;border-radius:12px}.result-metrics small{display:block;color:var(--muted);font-size:10px}.result-metrics strong{display:block;font-size:clamp(20px,3vw,28px);margin-top:3px;font-variant-numeric:tabular-nums}
+.playground-foot{color:var(--muted);font-size:11px;margin-top:16px}.challenge{margin-top:18px;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:20px;display:grid;grid-template-columns:.85fr 1.15fr;gap:20px;align-items:center}.challenge h3{font-size:21px;margin:7px 0}.challenge p{font-size:13px;color:var(--muted);margin:0}.quiz-options{display:grid;gap:8px}.quiz-option{text-align:left;background:#172a41;border:1px solid #304a66;color:var(--text);padding:13px 15px;border-radius:11px;font:600 12px/1.5 Inter,Arial;cursor:pointer}.quiz-option:hover,.quiz-option:focus-visible{border-color:var(--blue);outline:none}.quiz-option.selected-correct{border-color:var(--green);background:rgba(66,217,153,.12)}.quiz-option.selected-wrong{border-color:var(--gold);background:rgba(255,199,106,.1)}.quiz-feedback{grid-column:2;color:var(--muted);font-size:12px;min-height:20px}
+@media(max-width:760px){.playground-top{display:block}.live-pill{display:inline-block;margin-top:15px}.play-grid,.challenge{grid-template-columns:1fr}.quiz-feedback{grid-column:1}.control-card,.result-card{padding:18px}}
+
+
+/* Dirección visual premium: editorial tecnológica, clara y minimalista */
+:root{--bg:#f5f5f7;--surface:#fff;--surface2:#eceef2;--line:#d9dce2;--text:#1d1d1f;--muted:#6e727a;--green:#16864b;--blue:#0878d1;--pale:#fff;--gold:#9b6a14;--max:1320px}
+body{background:var(--bg);color:var(--text);letter-spacing:-.012em}
+header{background:rgba(250,250,252,.86);border-bottom:1px solid rgba(0,0,0,.08)}
+.brand{letter-spacing:-.035em;font-size:15px}.navlinks a{color:#555b64}.navlinks a:hover{color:#000}.menu{color:#1d1d1f;border-color:#c9cbd0}
+.hero{padding:88px 0 48px;grid-template-columns:.95fr 1.05fr;gap:30px}
+.eyebrow,.num{color:#656a73}.hero h1{font-size:clamp(46px,6vw,82px);letter-spacing:-.07em;line-height:.99;color:#111}
+.hero p{color:#5e636c;font-size:19px;line-height:1.55}.button{background:#111;color:#fff;border-radius:28px;padding:13px 22px}.button:hover{background:#333}
+.smallnote{color:#727780}
+.stats{gap:1px;background:#dfe1e5;border:1px solid #dfe1e5;border-radius:20px;overflow:hidden}
+.stat{background:#fff;border-radius:0;padding:25px}.stat b{letter-spacing:-.06em}.stat span{color:#30343a}.stat small{color:#777d85}
+section{padding-top:105px}.section-head h2{font-size:clamp(34px,4.6vw,58px);letter-spacing:-.06em;color:#111;line-height:1.04}.section-head p{color:#686e77;line-height:1.65}
+.panel,.card{background:#fff;border:1px solid #e2e4e8;border-radius:22px;box-shadow:0 8px 30px rgba(20,25,35,.035)}
+.card h3{color:#17191d}.card p{color:#666d76}
+.tag{color:#747b84}.big{letter-spacing:-.07em}
+.green{color:#16864b}.blue{color:#0878d1}.gold{color:#9b6a14}
+.callout{background:#fff;border:1px solid #e2e4e8;border-radius:20px;box-shadow:0 8px 30px rgba(20,25,35,.03)}.callout h3{color:#17191d}.callout p{color:#666d76}
+.note{background:#fff8e9;color:#685a3f;border-left-color:#c79639}
+.conclusion{background:#101114;color:#fff;border:0;border-radius:28px}.conclusion p{color:#c4c6cb}.conclusion .eyebrow{color:#aeb3bb}
+.credits{color:#777d85}.credits strong{color:#25282d}footer{border-color:#dedfe3}
+.playground{background:#111318;border:0;border-radius:28px;box-shadow:0 18px 48px rgba(0,0,0,.1)}.playground-top h3{color:#fff}.playground-top p{color:#b7bdc6}
+.control-card,.result-card{background:#1b1e25;border-color:#353a44}.control-card label{color:#f4f5f7}.control-card label strong{color:#6fe0a4}.sample-label strong{color:#fff!important}
+.preset{background:#292e38;border-color:#424957;color:#f4f5f7}.result-card>.tag,.playground-foot{color:#b4bbc5}
+.result-metrics>div{background:#292e38}.result-metrics small{color:#b4bbc5}.scenario-row .track{background:#3a414c}
+.challenge{background:#fff;border-color:#e2e4e8;box-shadow:0 8px 30px rgba(20,25,35,.03)}.challenge h3{color:#17191d}.challenge p,.quiz-feedback{color:#686e77}
+.quiz-option{background:#f5f6f8;border-color:#e0e3e8;color:#262a30}.quiz-option:hover{border-color:#0878d1}.quiz-option.selected-correct{background:#eaf8ef}.quiz-option.selected-wrong{background:#fff5e6}
+.source a{color:#0878d1}
+.device-stage{position:relative;min-height:510px;border-radius:30px;background:radial-gradient(ellipse at 48% 45%,#fff 0%,#eceef3 50%,#e3e6ec 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;gap:26px;padding:28px 20px 72px}
+.stage-glow{position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.8);filter:blur(30px)}
+.device{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:13px}
+.device-android{transform:translateY(22px) rotate(-7deg)}.device-ios{transform:translateY(-14px) rotate(6deg)}
+.device-frame{width:178px;height:355px;padding:7px;border-radius:34px;background:linear-gradient(145deg,#24272d,#747983 28%,#191b20 60%,#858a92);box-shadow:0 28px 50px rgba(24,31,45,.27),inset 0 0 0 1px rgba(255,255,255,.55)}
+.android-screen,.ios-screen{width:100%;height:100%;border-radius:28px;overflow:hidden;position:relative}
+.android-screen{background:linear-gradient(155deg,#d7f4e2,#73c99a 48%,#1d8e62);padding:16px;color:#123b2a}
+.screen-status{display:flex;justify-content:space-between;font-size:8px;font-weight:800}
+.android-orb{position:absolute;width:135px;height:135px;border-radius:50%;background:linear-gradient(145deg,#f5fff7,#b2edc8);left:50%;top:82px;transform:translateX(-50%);box-shadow:0 16px 35px rgba(13,84,49,.16)}
+.android-head{position:absolute;width:55px;height:45px;border-radius:28px 28px 15px 15px;background:#16864b;left:40px;top:40px}.android-head:before,.android-head:after{content:"";position:absolute;width:3px;height:18px;background:#16864b;top:-13px}.android-head:before{left:10px;transform:rotate(-28deg)}.android-head:after{right:10px;transform:rotate(28deg)}
+.android-orb i,.android-orb b{position:absolute;top:57px;width:5px;height:5px;border-radius:50%;background:#fff;z-index:2}.android-orb i{left:55px}.android-orb b{left:77px}
+.screen-caption{position:absolute;left:17px;bottom:75px;font-size:16px;line-height:1.2;font-weight:500}.screen-caption strong{font-size:23px;letter-spacing:-.06em}
+.screen-dock{position:absolute;bottom:12px;left:12px;right:12px;height:38px;border-radius:15px;background:rgba(255,255,255,.45);display:flex;justify-content:space-around;align-items:center;font-size:15px}
+.ios-screen{background:linear-gradient(155deg,#d7e6ff,#9db8ed 44%,#7965b9);padding:15px;color:#fff}
+.dynamic-island{width:68px;height:19px;border-radius:20px;background:#101116;margin:-3px auto 16px}
+.ios-time{font-size:39px;font-weight:600;letter-spacing:-.07em;text-align:center;text-shadow:0 2px 10px rgba(0,0,0,.12)}
+.ios-widgets{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:20px}.widget-date,.widget-weather{height:74px;border-radius:13px;background:rgba(255,255,255,.23);backdrop-filter:blur(8px);padding:9px;font-size:7px}.widget-date b{display:block;font-size:35px;line-height:1.15}.widget-weather{font-size:20px}.widget-weather b{font-size:23px;margin-left:3px}.widget-weather small{display:block;font-size:7px}
+.app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:19px}.app-grid i,.ios-dock i{font-style:normal;width:27px;height:27px;border-radius:8px;background:rgba(255,255,255,.78);color:#4d5f88;display:grid;place-items:center;font-size:14px;box-shadow:0 2px 5px rgba(0,0,0,.08)}
+.ios-dock{position:absolute;bottom:12px;left:10px;right:10px;border-radius:15px;background:rgba(255,255,255,.25);display:flex;justify-content:space-around;padding:7px 3px}
+.device-name{font-size:10px;font-weight:800;letter-spacing:.12em;color:#515760}.device-name span{display:block;text-align:center;font-size:20px;letter-spacing:-.06em;color:#15171b;margin-top:1px}
+.stage-data{position:absolute;z-index:2;right:20px;bottom:22px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);border-radius:16px;padding:13px 16px;box-shadow:0 8px 24px rgba(25,35,55,.1);min-width:155px}
+.stage-data small{display:block;font-size:8px;letter-spacing:.1em;color:#737985;font-weight:800}.stage-data strong{display:block;font-size:33px;letter-spacing:-.07em;line-height:1.1;color:#16864b}.stage-data em{font-size:16px;font-style:normal}.stage-data span{font-size:10px;color:#444b54}.stage-mini-bar{height:5px;background:#d8dce3;border-radius:8px;margin:8px 0;overflow:hidden}.stage-mini-bar i{display:block;width:74.11%;height:100%;background:#16864b}.stage-mini-bar b{display:none}.stage-source{position:absolute;left:20px;bottom:19px;font-size:9px;color:#6f7580}
+.visual-card{position:relative;overflow:hidden;min-height:340px;padding-top:205px}.android-card{background:linear-gradient(150deg,#effaf2,#fff 65%)}.ios-card{background:linear-gradient(150deg,#edf4ff,#fff 65%)}
+.mini-device-art{position:absolute;left:0;right:0;top:0;height:185px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mini-device-art:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:rgba(255,255,255,.8)}
+.mini-device-art>span{position:absolute;right:18px;bottom:14px;font-size:8px;letter-spacing:.13em;color:#69717b;font-weight:800}
+.mini-android-face{position:relative;width:110px;height:75px;border-radius:45px 45px 18px 18px;background:linear-gradient(145deg,#35b96d,#147a46);z-index:1;box-shadow:0 15px 24px rgba(22,134,75,.2)}
+.mini-android-face:before,.mini-android-face:after{content:"";position:absolute;top:-25px;width:4px;height:33px;background:#16864b;border-radius:4px}.mini-android-face:before{left:24px;transform:rotate(-28deg)}.mini-android-face:after{right:24px;transform:rotate(28deg)}
+.mini-android-face i,.mini-android-face b{position:absolute;top:28px;width:8px;height:8px;border-radius:50%;background:#fff}.mini-android-face i{left:29px}.mini-android-face b{right:29px}
+.mini-iphone-screen{position:relative;width:78px;height:150px;border:5px solid #242832;border-radius:19px;background:linear-gradient(150deg,#a8c9ff,#6559ad);z-index:1;box-shadow:0 14px 28px rgba(50,70,120,.2)}
+.mini-island{width:31px;height:9px;border-radius:8px;background:#17191e;margin:5px auto}.mini-apps{font-size:13px;line-height:2.5;text-align:center;color:#fff;margin-top:27px}
+.visual-story{width:100%;margin-top:105px;padding:82px 24px;background:#111318;color:#fff;border-radius:30px}
+.visual-story-inner{width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.visual-story .eyebrow{color:#9ca3ad}.visual-story-copy h2{font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-.065em;margin:16px 0}.visual-story-copy p{color:#b9bec7;font-size:16px;max-width:500px}
+.visual-story-chart{background:#1c2028;border:1px solid #363c47;border-radius:22px;padding:30px}
+.story-number{margin:14px 0 25px}.story-number span{display:block;font-size:11px;letter-spacing:.13em;color:#c5cbd3;font-weight:800}.story-number strong{display:block;font-size:42px;letter-spacing:-.06em;margin:3px 0 10px}.story-number:first-child strong{color:#69d99b}.story-number:last-child strong{color:#75baff}
+.story-track{height:9px;border-radius:9px;background:#363d48;overflow:hidden}.story-track i{display:block;height:100%;background:#36b875;border-radius:9px}.story-number:last-child .story-track i{background:#559ee9}
+.story-difference{border-top:1px solid #3a414d;padding-top:20px;margin-top:12px}.story-difference small{display:block;color:#aeb5c0;font-size:9px;letter-spacing:.12em}.story-difference b{display:block;font-size:35px;letter-spacing:-.06em;color:#fff}.story-difference span{font-size:11px;color:#b4bbc5}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.device-stage{min-height:470px}.visual-story-inner{grid-template-columns:1fr;gap:30px}.visual-story{padding:60px 22px}}
+@media(max-width:620px){.hero{padding-top:56px}.device-stage{min-height:410px;gap:10px;padding:18px 8px 70px}.device-frame{width:139px;height:290px;border-radius:28px;padding:6px}.android-screen,.ios-screen{border-radius:23px}.android-orb{width:110px;height:110px;top:72px}.android-head{left:28px;top:32px}.android-orb i{left:44px;top:47px}.android-orb b{left:65px;top:47px}.screen-caption{bottom:61px;font-size:13px}.screen-caption strong{font-size:18px}.device-ios{transform:translateY(-7px) rotate(6deg)}.device-android{transform:translateY(17px) rotate(-7deg)}.ios-time{font-size:31px}.ios-widgets{margin-top:14px}.widget-date,.widget-weather{height:60px;padding:6px}.widget-date b{font-size:28px}.app-grid{gap:6px;margin-top:14px}.app-grid i{width:22px;height:22px}.stage-data{right:9px;bottom:13px;min-width:125px;padding:9px 11px}.stage-data strong{font-size:26px}.stage-source{left:10px;bottom:16px;font-size:7px}.stats{grid-template-columns:1fr 1fr}.stat{padding:17px}.visual-card{min-height:320px;padding-top:195px}.visual-story{margin-top:75px;padding:45px 17px}.visual-story-chart{padding:22px}.story-number strong{font-size:35px}.conclusion{padding:27px}}
+
+
+/* Versión independiente para computadora */
+@media(min-width:901px){body.desktop-version{min-width:1024px}.desktop-version .wrap{width:min(1320px,calc(100% - 80px))}}
+@media(max-width:900px){body.desktop-version{min-width:1024px}.desktop-version .wrap{width:min(1320px,calc(100% - 80px))}}
+
+/* Protección de legibilidad: ningún recurso visual invade bloques de texto */
+*,*::before,*::after{box-sizing:border-box}
+.wrap,main,section,.hero,.section-head,.panel,.card,.grid2,.grid3,.grid4{min-width:0}
+h1,h2,h3,p,li,.stat,.source,.note,.barhead,.conclusion{overflow-wrap:anywhere;word-break:normal}
+.hero{align-items:start}
+.hero>div:first-child{position:relative;z-index:2;min-width:0}
+.hero>div:last-child{position:relative;z-index:1;min-width:0}
+.hero h1,.hero p,.hero .actions{position:relative;z-index:2;max-width:100%}
+.device-stage{position:relative;isolation:isolate;width:100%;max-width:100%;margin:0;flex-shrink:0}
+.device-frame{flex:0 1 44%;min-width:0;max-width:190px}
+.stage-data,.stage-source{z-index:4}
+.visual-card{display:flex;flex-direction:column;position:relative}
+.visual-card>*:not(.mini-device-art){position:relative;z-index:2}
+.mini-device-art{z-index:1}
+.visual-story{position:relative;isolation:isolate}
+.visual-story-inner,.visual-story-chart{min-width:0}
+.visual-story-inner>*{min-width:0}
+img,svg,canvas{max-width:100%}
+
+@media(min-width:901px){
+  .desktop-version .hero{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center}
+  .desktop-version .hero>div:first-child{padding-right:8px}
+  .desktop-version .device-stage{min-height:480px}
+}
+
+
+/* Ajuste final: evitar solapamientos y asegurar contraste */
+.visual-story,.visual-story-inner,.visual-story-chart,.conclusion,
+.callout,.panel,.card,.stat,.result-card,.control-card,.source-list,
+.source,.quiz-feedback,.challenge,.bar-row,.barhead{
+  position:relative;
+  min-width:0;
+}
+.visual-story-inner{display:grid;align-items:start}
+.visual-story-chart{align-self:start}
+.callout h3,.callout p,.card h3,.card p,.panel h3,.panel p{
+  position:relative;z-index:2;
+}
+@media(max-width:900px){
+  .mobile-version .visual-story-inner{grid-template-columns:minmax(0,1fr)!important}
+  .mobile-version .visual-story-chart{margin-top:8px}
+  .mobile-version .callout,.mobile-version .panel,.mobile-version .card,
+  .mobile-version .source,.mobile-version .stat,.mobile-version .result-card,
+  .mobile-version .control-card{height:auto;min-height:0;overflow:visible}
+  .mobile-version .callout h3,.mobile-version .card h3,
+  .mobile-version .panel h3{margin:0 0 10px;line-height:1.3}
+  .mobile-version .callout p,.mobile-version .card p,
+  .mobile-version .panel p{margin:0;line-height:1.6}
+  .mobile-version .visual-story-chart *{max-width:100%}
+  .mobile-version .stage-data,.mobile-version .stage-source{
+    position:absolute;z-index:5;max-width:45%;overflow-wrap:anywhere
+  }
+  .mobile-version .hero>div:first-child,.mobile-version .hero>div:last-child{
+    transform:none!important;float:none!important
+  }
+}
+
+
+/* Corrección puntual: tarjetas azul oscuro con texto siempre legible */
+.card[style*="#112a46"],
+.card[style*="#112a46"] *{
+  color:#f7f9fc;
+}
+.card[style*="#112a46"] .blue,
+.card[style*="#112a46"] .tag.blue{
+  color:#9fcaff!important;
+}
+.card[style*="#112a46"] p,
+.card[style*="#112a46"] small,
+.card[style*="#112a46"] .tag{
+  color:#e2eaf4!important;
+}
+.card[style*="#102e29"],
+.card[style*="#102e29"] *{
+  color:#f5fbf7;
+}
+.card[style*="#102e29"] .green,
+.card[style*="#102e29"] .tag.green{
+  color:#9af0bd!important;
+}
+.card[style*="#102e29"] p,
+.card[style*="#102e29"] small,
+.card[style*="#102e29"] .tag{
+  color:#e0f0e7!important;
+}
+
+
+/* Apertura editorial: responder la pregunta rectora antes de comparar */
+.question-lead{margin:34px 0 18px;padding:clamp(24px,4vw,42px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#14263d 0%,#102c2a 100%);}
+.question-lead .eyebrow{margin-bottom:12px}
+.question-lead h2{font-size:clamp(27px,4vw,46px);line-height:1.12;letter-spacing:-.04em;margin:0 0 16px;max-width:1000px;color:#fff}
+.question-lead>p{font-size:clamp(15px,1.5vw,18px);line-height:1.65;color:#e2eaf4;max-width:1000px;margin:0}
+.question-lenses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.question-lens{padding:17px;border-radius:15px;background:rgba(5,13,24,.42);border:1px solid rgba(220,235,255,.18);min-width:0}
+.question-lens b{display:block;font-size:15px;margin-bottom:6px;color:#fff}
+.question-lens p{margin:0;color:#d8e3f0;font-size:13px;line-height:1.55}
+.question-answer{margin-top:16px;padding-top:16px;border-top:1px solid rgba(220,235,255,.2);font-size:14px;line-height:1.65;color:#f0f5fb}
+@media(max-width:760px){.question-lead{margin:22px 0 12px;padding:23px 18px;border-radius:18px}.question-lead h2{font-size:clamp(27px,8vw,36px)}.question-lead>p{font-size:15px}.question-lenses{grid-template-columns:minmax(0,1fr);gap:9px;margin-top:17px}.question-lens{padding:14px}.question-lens b{font-size:15px}.question-lens p{font-size:13px}.question-answer{font-size:13px}}
+
+
+/* Animación de lectura progresiva */
+#reading-progress{position:fixed;top:0;left:0;width:100%;height:4px;z-index:9999;background:rgba(120,130,145,.16)}
+#reading-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#2f9e63,#3986e8);transition:width .12s linear}
+.js-reveal{opacity:0;transform:translateY(22px);transition:opacity .72s ease,transform .72s cubic-bezier(.2,.7,.2,1)}
+.js-reveal.is-visible{opacity:1;transform:translateY(0)}
+.js-reveal-child{opacity:0;transform:translateY(16px);transition:opacity .62s ease,transform .62s ease}
+.js-reveal-child.is-visible{opacity:1;transform:translateY(0)}
+.question-lead h2{text-wrap:balance}
+.question-lens,.card,.panel{transition:transform .25s ease,box-shadow .25s ease}
+.question-lens:hover,.card:hover,.panel:hover{transform:translateY(-3px)}
+a:focus-visible,button:focus-visible{outline:3px solid #3986e8;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){
+ .js-reveal,.js-reveal-child{opacity:1!important;transform:none!important;transition:none!important}
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+
+
+/* Mapa estatal interactivo: ENDUTIH 2025 */
+.state-map-section{padding-top:105px}
+.state-map-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,.75fr);gap:20px;align-items:stretch;margin-top:28px}
+.state-map-card,.state-detail{background:#fff;border:1px solid #e2e4e8;border-radius:24px;padding:24px;box-shadow:0 8px 30px rgba(20,25,35,.035);min-width:0}
+.state-map-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.map-kicker{font-size:10px;font-weight:800;letter-spacing:.13em;color:#16864b}.state-map-top h3,.state-detail h3,.regional-reading h3{margin:5px 0 0;color:#17191d;font-size:22px;letter-spacing:-.04em}.map-year{font-size:11px;color:#68717c;background:#f0f2f5;border-radius:30px;padding:6px 10px;font-weight:700;white-space:nowrap}
+.map-legend{display:flex;gap:15px;flex-wrap:wrap;margin:19px 0 20px;color:#59616c;font-size:11px}.map-legend span{display:flex;align-items:center;gap:6px}.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}.legend-dot.high{background:#16864b}.legend-dot.mid{background:#73c69a}.legend-dot.low{background:#e3b85b}
+.state-cartogram{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.state-region{border:1px solid #e7e9ed;border-radius:15px;padding:12px;min-width:0}.state-region h4{margin:0 0 9px;color:#333a43;font-size:12px;letter-spacing:.02em}.state-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.state-tile{border:1px solid transparent;border-radius:9px;min-width:0;min-height:51px;padding:6px 3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;color:#17221b;transition:transform .18s ease,box-shadow .18s ease,outline .18s ease}.state-tile span{font-size:10px;font-weight:800;letter-spacing:.04em}.state-tile b{font-size:11px;font-weight:700}.state-tile.high{background:#d5f0df;border-color:#a9dfbc}.state-tile.mid{background:#e5f4ea;border-color:#c9e8d3}.state-tile.low{background:#fff2d6;border-color:#f0d69b}.state-tile:hover{transform:translateY(-2px);box-shadow:0 5px 12px rgba(20,30,40,.1)}.state-tile[aria-pressed="true"]{outline:3px solid #1d2835;outline-offset:1px;box-shadow:0 4px 12px rgba(20,30,40,.12)}.state-tile:focus-visible{outline:3px solid #0878d1;outline-offset:2px}
+.map-caption{font-size:10px;color:#7a818b;margin:13px 0 0}.state-detail{background:#111318;color:#fff;display:flex;flex-direction:column;justify-content:center;min-height:270px}.state-detail .map-kicker{color:#78dfa4}.state-detail h3{font-size:25px;color:#fff;margin:9px 0 0}.state-detail>strong{font-size:clamp(48px,6vw,68px);line-height:1.05;letter-spacing:-.07em;color:#71d99e;margin:10px 0}.state-detail>p{color:#c4c9d1;font-size:13px;margin:0}.state-rank{font-size:11px;color:#fff;background:#292e38;border:1px solid #3c4350;border-radius:10px;padding:10px 12px;margin:17px 0}.national-context{border-top:1px solid #3a414d;padding-top:14px;display:flex;justify-content:space-between;align-items:center;color:#c5cbd3;font-size:12px}.national-context b{color:#fff;font-size:21px}.state-detail .state-caveat{border-top:1px solid #3a414d;padding-top:14px;margin-top:14px;font-size:11px;color:#c4c9d1}.state-caveat b{color:#fff}.regional-reading{display:grid;grid-template-columns:1.5fr .7fr;gap:18px;background:#f1f5f2;border:1px solid #dce9df;border-radius:20px;padding:22px 24px;margin-top:18px}.regional-reading h3{font-size:25px}.regional-reading p{color:#5f6870;margin:8px 0 0;font-size:13px}.regional-reading-stat{border-left:1px solid #d3e0d6;padding-left:22px;display:flex;flex-direction:column;justify-content:center}.regional-reading-stat strong{font-size:38px;letter-spacing:-.06em;color:#16864b}.regional-reading-stat span{font-size:11px;color:#59616c}.state-source{font-size:10px;color:#707782;margin:13px 2px 0}.state-source a{color:#0878d1;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:760px){.state-map-layout{grid-template-columns:1fr}.state-map-card,.state-detail{padding:17px;border-radius:18px}.state-cartogram{grid-template-columns:1fr}.state-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}.state-detail{min-height:0}.regional-reading{grid-template-columns:1fr;padding:18px}.regional-reading-stat{border-left:0;border-top:1px solid #d3e0d6;padding:13px 0 0}.state-map-top h3{font-size:19px}.map-legend{gap:9px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.state-tile{transition:none}}
+
+
+/* Corrección de contraste en el simulador */
+.result-metrics>div{background:#303744!important;border:1px solid #485263}
+.result-metrics small{color:#e0e6ef!important;font-weight:600}
+.result-metrics strong{color:#ffffff!important;font-size:clamp(1.65rem,3vw,2.15rem);font-weight:800;letter-spacing:-.035em}
+.result-card .scenario-row b{color:#f7f9fc!important}
+.result-card .scenario-row small{color:#cbd3df!important}
+.result-card>.tag{color:#d5dce7!important}
+.result-card .smallnote{color:#cbd3df!important}
+</style>
+</head>
+<body class="desktop-version">
+<header><div class="wrap nav">
+<a class="brand" href="#inicio">DATOS / MÉXICO</a>
+<button class="menu" aria-expanded="false" aria-label="Abrir menú" onclick="const n=document.querySelector('.navlinks');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">Menú</button>
+<nav class="navlinks" aria-label="Navegación principal">
+<a href="#question-title">Pregunta guía</a><a href="#comparacion">Comparación</a><a href="#laboratorio">Juega con el dato</a><a href="#acceso">Acceso digital</a><a href="#mercado">Mercado</a><a href="#preferencias">Preferencias</a><a href="#metodo">Método</a>
+</nav></div></header>
+<main id="inicio" class="wrap">
+<section class="question-lead" aria-labelledby="question-title">
+  <div class="eyebrow">La pregunta que guía esta investigación</div>
+  <h2 id="question-title">¿Qué cambia cuando distinguimos uso, acceso y preferencias?</h2>
+  <p>La lectura del mercado móvil mexicano cambia porque dejamos de tratar como equivalentes tres fenómenos distintos: usar un sistema, tener condiciones para conectarse y preferir una marca o experiencia. Cada indicador responde una pregunta diferente y tiene límites propios.</p>
+  <div class="question-lenses">
+    <article class="question-lens"><b>01 · Uso</b><p>Indica qué sistema concentra actividad móvil/web. StatCounter registra para México, en octubre de 2026, 74.11% para Android y 25.89% para iOS. Es participación de uso medido, no un conteo de personas ni de equipos vendidos.</p></article>
+    <article class="question-lens"><b>02 · Acceso</b><p>Describe quién puede conectarse y mediante qué dispositivos o condiciones. La ENDUTIH 2025 reporta que 84.6% de la población de seis años y más usó teléfono celular. No identifica si el equipo funciona con Android o iOS.</p></article>
+    <article class="question-lens"><b>03 · Preferencias</b><p>Explora elecciones, satisfacción y lealtad declarada. La encuesta de SellCell 2026 aporta señales sobre permanencia de marca, pero su muestra corresponde a Estados Unidos: no permite atribuir esas preferencias a México.</p></article>
+  </div>
+  <div class="question-answer"><strong>¿Qué cambia al separarlos?</strong> Evitamos concluir que el sistema más usado es necesariamente el más preferido, que toda persona con celular tiene el mismo acceso o que una cuota de uso equivale a ventas. La comparación se vuelve más precisa: uso muestra presencia; acceso revela condiciones de conectividad; preferencias ayudan a comprender decisiones. Juntos ofrecen contexto, pero no deben mezclarse como si fueran una sola medición.</div>
+</section>
+
+<div class="hero">
+<div><div class="eyebrow">Especial · Mercado digital mexicano / 2026</div>
+<h1>Android vs. iOS: la batalla por la pantalla mexicana</h1>
+<p>Dos sistemas dominan la experiencia móvil. ¿Qué nos dicen los datos sobre su presencia, el acceso digital y las decisiones de consumo?</p>
+<div class="actions"><a class="button" href="#comparacion">Explorar los datos ↓</a><span class="smallnote">Una lectura basada en fuentes y universos de medición distintos.</span></div></div>
+<div class="device-stage" aria-label="Ilustración de dos teléfonos que representan Android y iOS">
+  <div class="stage-glow"></div>
+  <div class="device device-android">
+    <div class="device-frame">
+      <div class="android-screen">
+        <div class="screen-status"><span>9:41</span><span>● ● ▰</span></div>
+        <div class="android-orb"><span class="android-head"></span><i></i><b></b></div>
+        <div class="screen-caption">Tu mundo.<br><strong>Tu Android.</strong></div>
+        <div class="screen-dock"><span>●</span><span>◉</span><span>▣</span><span>◆</span></div>
+      </div>
+    </div>
+    <div class="device-name">ANDROID <span>74.11%</span></div>
+  </div>
+  <div class="device device-ios">
+    <div class="device-frame">
+      <div class="ios-screen">
+        <div class="dynamic-island"></div>
+        <div class="ios-time">9:41</div>
+        <div class="ios-widgets"><div class="widget-date">MARTES <b>17</b></div><div class="widget-weather">☀️<b>24°</b><small>Ciudad de México</small></div></div>
+        <div class="app-grid"><i>✉</i><i>◉</i><i>♫</i><i>▦</i><i>◎</i><i>⌁</i><i>◌</i><i>◈</i></div>
+        <div class="ios-dock"><i>☎</i><i>✉</i><i>◎</i><i>♫</i></div>
+      </div>
+    </div>
+    <div class="device-name">iOS <span>25.89%</span></div>
+  </div>
+  <div class="stage-data"><small>MÉXICO · OCTUBRE 2026</small><strong>74.11 <em>%</em></strong><span>participación Android</span><div class="stage-mini-bar"><i></i><b></b></div><small>iOS · 25.89%</small></div>
+  <p class="stage-source">Participación de uso móvil / web · StatCounter</p>
+</div></div>
+<div class="stats">
+<div class="stat"><b class="green">74.11%</b><span>Android</span><small>Uso móvil / web</small></div>
+<div class="stat"><b class="blue">25.89%</b><span>iOS</span><small>Uso móvil / web</small></div>
+<div class="stat"><b>48.22%</b><span>Brecha</span><small>Diferencia entre participaciones</small></div>
+<div class="stat"><b class="gold">35 millones</b><span>Smartphones vendidos</span><small>México · 2025</small></div>
+</div>
+
+<section id="comparacion"><div class="section-head"><div class="num">01 / LA COMPARACIÓN</div><h2>Una brecha de uso, no una explicación total</h2><p>La distribución muestra qué sistema concentra más actividad móvil/web. No mide por sí sola ventas, propiedad, satisfacción ni preferencia declarada.</p></div>
+<div class="grid2">
+<article class="card visual-card android-card"><div class="mini-device-art android-art"><div class="mini-android-face"><i></i><b></b></div><span>OPEN ECOSYSTEM</span></div><div class="tag green">ANDROID</div><div class="big green">74.11%</div><h3>Mayor participación registrada</h3><p>Android concentra la mayor parte de la actividad móvil/web medida por StatCounter en México durante octubre de 2026.</p></article>
+<article class="card visual-card ios-card"><div class="mini-device-art ios-art"><div class="mini-iphone-screen"><div class="mini-island"></div><div class="mini-apps">● ● ●<br>● ● ●</div></div><span>DESIGNED EXPERIENCE</span></div><div class="tag blue">APPLE · iOS</div><div class="big blue">25.89%</div><h3>Una cuarta parte de la participación</h3><p>La presencia de iOS es relevante, pero su cuota no debe confundirse con ventas ni con nivel socioeconómico.</p></article>
+</div><div class="callout"><h3>Brecha: 48.22 puntos porcentuales</h3><p>El cálculo es 74.11 − 25.89 = 48.22. Es una diferencia entre participaciones porcentuales, no una diferencia en millones de usuarios.</p></div></section>
+
+
+<section id="laboratorio">
+  <div class="section-head">
+    <div class="num">02 / LABORATORIO DE DATOS</div>
+    <h2>Ahora te toca mover las cifras</h2>
+    <p>Experimenta con escenarios hipotéticos para entender cómo cambia la distribución. Los controles no modifican la medición de StatCounter: sirven para jugar con el dato y explorar sus proporciones.</p>
+  </div>
+  <div class="playground">
+    <div class="playground-top">
+      <div>
+        <div class="tag">SIMULADOR · PARTICIPACIÓN MÓVIL</div>
+        <h3>¿Qué pasaría si cambiara la participación?</h3>
+        <p>La referencia real de octubre de 2026 es Android 74.11% e iOS 25.89%. Mueve el control para crear otro escenario.</p>
+      </div>
+      <span class="live-pill">ESCENARIO INTERACTIVO</span>
+    </div>
+    <div class="play-grid">
+      <div class="control-card">
+        <label for="androidRange">Participación hipotética de Android <strong id="androidValue">74.11%</strong></label>
+        <input id="androidRange" type="range" min="0" max="100" step="0.1" value="74.11">
+        <div class="range-ends"><span>0% Android</span><span>100% Android</span></div>
+        <label for="sampleRange" class="sample-label">Imagina un universo de <strong id="sampleValue">1,000</strong> dispositivos</label>
+        <input id="sampleRange" type="range" min="100" max="10000" step="100" value="1000">
+        <div class="range-ends"><span>100 equipos</span><span>10,000 equipos</span></div>
+        <div class="preset-row">
+          <button type="button" class="preset" data-value="74.11">Dato real</button>
+          <button type="button" class="preset" data-value="60">Android 60%</button>
+          <button type="button" class="preset" data-value="50">Empate</button>
+          <button type="button" class="preset" data-value="35">iOS arriba</button>
+        </div>
+      </div>
+      <div class="result-card" aria-live="polite">
+        <div class="tag">ASÍ QUEDARÍA TU ESCENARIO</div>
+        <div class="scenario-bars">
+          <div class="scenario-row"><div><span class="green">Android</span><b id="androidCount">741</b></div><div class="track"><div id="androidBar" class="fill android" style="width:74.11%"></div></div><small id="androidPct">74.11%</small></div>
+          <div class="scenario-row"><div><span class="blue">iOS</span><b id="iosCount">259</b></div><div class="track"><div id="iosBar" class="fill ios" style="width:25.89%"></div></div><small id="iosPct">25.89%</small></div>
+        </div>
+        <div class="result-metrics">
+          <div><small>Diferencia (puntos porcentuales)</small><strong id="gapValue">48.22 pp</strong></div>
+          <div><small>Equipos de diferencia</small><strong id="countGap">482</strong></div>
+        </div>
+        <p class="smallnote" id="scenarioText">En este escenario, Android tendría aproximadamente 482 dispositivos más.</p>
+      </div>
+    </div>
+    <div class="playground-foot">Ojo: los conteos son estimaciones matemáticas aplicadas al universo que tú elegiste; no representan una encuesta ni un conteo real de teléfonos en México.</div>
+  </div>
+
+  <div class="challenge">
+    <div>
+      <div class="tag">RETO RÁPIDO · INTERPRETACIÓN</div>
+      <h3>¿Qué afirmación describe correctamente el dato?</h3>
+      <p>Elige una opción. La respuesta te explica qué sí podemos concluir y qué no.</p>
+    </div>
+    <div class="quiz-options">
+      <button type="button" class="quiz-option" data-correct="false">A. Android tiene 48.22% más usuarios que iOS.</button>
+      <button type="button" class="quiz-option" data-correct="true">B. La participación de Android supera a la de iOS por 48.22 puntos porcentuales.</button>
+      <button type="button" class="quiz-option" data-correct="false">C. En México hay 48.22 millones más de usuarios Android.</button>
+    </div>
+    <div id="quizFeedback" class="quiz-feedback" aria-live="polite">Selecciona una respuesta para comprobar tu interpretación.</div>
+  </div>
+</section>
+
+<section class="visual-story" aria-label="Comparación visual de los ecosistemas">
+  <div class="visual-story-inner">
+    <div class="visual-story-copy"><div class="eyebrow">DOS ECOSISTEMAS · UNA MISMA PANTALLA</div><h2>La tecnología se vive distinto. El dato permite comparar.</h2><p>Android y iOS compiten por la atención, el tiempo de uso y la experiencia cotidiana. En México, la medición de octubre de 2026 registra una distribución desigual.</p></div>
+    <div class="visual-story-chart">
+      <div class="story-number"><span>ANDROID</span><strong>74.11%</strong><div class="story-track"><i style="width:74.11%"></i></div></div>
+      <div class="story-number"><span>iOS</span><strong>25.89%</strong><div class="story-track"><i style="width:25.89%"></i></div></div>
+      <div class="story-difference"><small>DIFERENCIA ENTRE PARTICIPACIONES</small><b>48.22%</b><span>La brecha visual del mercado móvil mexicano</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa-regional" class="state-map-section">
+<div class="section-head"><div class="num">02 / EL MAPA DEL ACCESO</div><h2>México conectado: las diferencias entre estados</h2><p>El porcentaje de población de 6 años y más que utilizó teléfono celular durante 2025 cambia entre entidades. Explora el mapa para comparar los 32 estados.</p></div>
+<div class="state-map-layout">
+ <div class="state-map-card">
+  <div class="state-map-top"><div><span class="map-kicker">ENDUTIH 2025 · INEGI</span><h3>Uso de teléfono celular por entidad</h3></div><span class="map-year">2025</span></div>
+  <div class="map-legend"><span><i class="legend-dot high"></i> Más de 90%</span><span><i class="legend-dot mid"></i> 80.1% a 90%</span><span><i class="legend-dot low"></i> Menos de 80%</span></div>
+  <div class="state-cartogram" role="group" aria-label="Mapa esquemático por regiones. Selecciona una entidad para consultar el porcentaje de uso de celular.">
+<div class="state-region"><h4>Noroeste</h4><div class="state-tiles">
+<button type="button" class="state-tile mid" data-state="Baja California" data-value="90.0" aria-pressed="false" aria-label="Baja California: 90.0%"><span>BC</span><b>90.0%</b></button>
+<button type="button" class="state-tile high" data-state="Baja California Sur" data-value="90.2" aria-pressed="false" aria-label="Baja California Sur: 90.2%"><span>BCS</span><b>90.2%</b></button>
+<button type="button" class="state-tile mid" data-state="Sonora" data-value="87.5" aria-pressed="false" aria-label="Sonora: 87.5%"><span>SON</span><b>87.5%</b></button>
+<button type="button" class="state-tile mid" data-state="Sinaloa" data-value="86.6" aria-pressed="false" aria-label="Sinaloa: 86.6%"><span>SIN</span><b>86.6%</b></button>
+</div></div>
+<div class="state-region"><h4>Norte</h4><div class="state-tiles">
+<button type="button" class="state-tile mid" data-state="Chihuahua" data-value="88.6" aria-pressed="false" aria-label="Chihuahua: 88.6%"><span>CHIH</span><b>88.6%</b></button>
+<button type="button" class="state-tile mid" data-state="Coahuila" data-value="84.8" aria-pressed="false" aria-label="Coahuila: 84.8%"><span>COAH</span><b>84.8%</b></button>
+<button type="button" class="state-tile mid" data-state="Nuevo León" data-value="89.8" aria-pressed="false" aria-label="Nuevo León: 89.8%"><span>NL</span><b>89.8%</b></button>
+<button type="button" class="state-tile mid" data-state="Tamaulipas" data-value="85.6" aria-pressed="false" aria-label="Tamaulipas: 85.6%"><span>TAMPS</span><b>85.6%</b></button>
+<button type="button" class="state-tile mid" data-state="Durango" data-value="84.9" aria-pressed="false" aria-label="Durango: 84.9%"><span>DGO</span><b>84.9%</b></button>
+</div></div>
+<div class="state-region"><h4>Occidente</h4><div class="state-tiles">
+<button type="button" class="state-tile mid" data-state="Nayarit" data-value="88.7" aria-pressed="false" aria-label="Nayarit: 88.7%"><span>NAY</span><b>88.7%</b></button>
+<button type="button" class="state-tile mid" data-state="Jalisco" data-value="86.9" aria-pressed="false" aria-label="Jalisco: 86.9%"><span>JAL</span><b>86.9%</b></button>
+<button type="button" class="state-tile mid" data-state="Colima" data-value="87.3" aria-pressed="false" aria-label="Colima: 87.3%"><span>COL</span><b>87.3%</b></button>
+<button type="button" class="state-tile mid" data-state="Michoacán" data-value="84.5" aria-pressed="false" aria-label="Michoacán: 84.5%"><span>MICH</span><b>84.5%</b></button>
+</div></div>
+<div class="state-region"><h4>Centro</h4><div class="state-tiles">
+<button type="button" class="state-tile mid" data-state="Aguascalientes" data-value="87.3" aria-pressed="false" aria-label="Aguascalientes: 87.3%"><span>AGS</span><b>87.3%</b></button>
+<button type="button" class="state-tile mid" data-state="Zacatecas" data-value="81.7" aria-pressed="false" aria-label="Zacatecas: 81.7%"><span>ZAC</span><b>81.7%</b></button>
+<button type="button" class="state-tile mid" data-state="San Luis Potosí" data-value="81.0" aria-pressed="false" aria-label="San Luis Potosí: 81.0%"><span>SLP</span><b>81.0%</b></button>
+<button type="button" class="state-tile mid" data-state="Guanajuato" data-value="83.0" aria-pressed="false" aria-label="Guanajuato: 83.0%"><span>GTO</span><b>83.0%</b></button>
+<button type="button" class="state-tile mid" data-state="Querétaro" data-value="88.8" aria-pressed="false" aria-label="Querétaro: 88.8%"><span>QRO</span><b>88.8%</b></button>
+<button type="button" class="state-tile mid" data-state="Hidalgo" data-value="83.6" aria-pressed="false" aria-label="Hidalgo: 83.6%"><span>HGO</span><b>83.6%</b></button>
+<button type="button" class="state-tile high" data-state="Ciudad de México" data-value="91.3" aria-pressed="false" aria-label="Ciudad de México: 91.3%"><span>CDMX</span><b>91.3%</b></button>
+<button type="button" class="state-tile mid" data-state="Estado de México" data-value="85.7" aria-pressed="false" aria-label="Estado de México: 85.7%"><span>MEX</span><b>85.7%</b></button>
+<button type="button" class="state-tile mid" data-state="Morelos" data-value="84.8" aria-pressed="false" aria-label="Morelos: 84.8%"><span>MOR</span><b>84.8%</b></button>
+<button type="button" class="state-tile mid" data-state="Tlaxcala" data-value="82.7" aria-pressed="false" aria-label="Tlaxcala: 82.7%"><span>TLAX</span><b>82.7%</b></button>
+<button type="button" class="state-tile mid" data-state="Puebla" data-value="83.6" aria-pressed="false" aria-label="Puebla: 83.6%"><span>PUE</span><b>83.6%</b></button>
+</div></div>
+<div class="state-region"><h4>Sur-Sureste</h4><div class="state-tiles">
+<button type="button" class="state-tile mid" data-state="Veracruz" data-value="82.2" aria-pressed="false" aria-label="Veracruz: 82.2%"><span>VER</span><b>82.2%</b></button>
+<button type="button" class="state-tile low" data-state="Guerrero" data-value="79.4" aria-pressed="false" aria-label="Guerrero: 79.4%"><span>GRO</span><b>79.4%</b></button>
+<button type="button" class="state-tile low" data-state="Oaxaca" data-value="77.9" aria-pressed="false" aria-label="Oaxaca: 77.9%"><span>OAX</span><b>77.9%</b></button>
+<button type="button" class="state-tile low" data-state="Chiapas" data-value="70.8" aria-pressed="false" aria-label="Chiapas: 70.8%"><span>CHIS</span><b>70.8%</b></button>
+<button type="button" class="state-tile low" data-state="Tabasco" data-value="76.4" aria-pressed="false" aria-label="Tabasco: 76.4%"><span>TAB</span><b>76.4%</b></button>
+<button type="button" class="state-tile low" data-state="Campeche" data-value="78.4" aria-pressed="false" aria-label="Campeche: 78.4%"><span>CAMP</span><b>78.4%</b></button>
+<button type="button" class="state-tile mid" data-state="Yucatán" data-value="81.1" aria-pressed="false" aria-label="Yucatán: 81.1%"><span>YUC</span><b>81.1%</b></button>
+<button type="button" class="state-tile mid" data-state="Quintana Roo" data-value="87.4" aria-pressed="false" aria-label="Quintana Roo: 87.4%"><span>QROO</span><b>87.4%</b></button>
+</div></div>
+</div>
+  <p class="map-caption">Mapa esquemático agrupado por regiones para facilitar la exploración; no representa límites ni posiciones geográficas exactas.</p>
+ </div>
+ <aside class="state-detail" aria-live="polite"><span class="map-kicker">ENTIDAD SELECCIONADA</span><h3 id="state-name">Ciudad de México</h3><strong id="state-value">91.3%</strong><p>de la población de 6 años y más utilizó teléfono celular en 2025.</p><div class="state-rank" id="state-rank">Mayor porcentaje entre las 32 entidades.</div><div class="national-context"><span>Promedio nacional</span><b>84.6%</b></div><p class="state-caveat">Este indicador mide uso de celular. <b>No identifica si el dispositivo utiliza Android o iOS.</b></p></aside>
+</div>
+<div class="regional-reading"><div><span class="map-kicker">LO QUE REVELAN LOS DATOS</span><h3>Una brecha de 20.5 puntos</h3><p>Entre Ciudad de México (91.3%) y Chiapas (70.8%) hay una diferencia de 20.5 puntos porcentuales en el uso de celular.</p></div><div class="regional-reading-stat"><strong>8.3 pp</strong><span>Aumento de 2024 a 2025 en Oaxaca y Chiapas, según INEGI.</span></div></div>
+<p class="state-source">Fuente: INEGI, ENDUTIH 2025, “Personas usuarias de teléfono celular según entidad federativa”. <a href="https://www.inegi.org.mx/contenidos/programas/endutih/2025/doc/presentacion_endutih2025.pdf" target="_blank" rel="noopener">Consultar presentación oficial</a> · <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/endutih/ENDUTIH_25_RR.pdf" target="_blank" rel="noopener">Reporte de resultados</a>.</p>
+</section>
+
+<section id="panorama-mexico"><div class="section-head"><div class="num">03 / SISTEMAS Y ELECCIÓN</div><h2>Android e iOS: uso, permanencia y marcas</h2><p>Dos fuentes mexicanas permiten observar tanto el sistema operativo declarado en una encuesta como la elección de fabricantes en el mercado. Cada dato conserva su periodo y metodología.</p></div>
+<div class="note"><strong>Comparabilidad:</strong> el dato del IFT proviene de la Cuarta Encuesta 2020 y no representa una medición actual. The CIU reporta conversión de marca en el primer trimestre de 2025; no es participación de sistemas operativos.</div>
+<div class="grid2">
+<article class="card"><div class="tag">IFT · CUARTA ENCUESTA 2020</div><h3>Sistema operativo utilizado</h3><div class="big green">84.6%</div><p>Android</p><div class="splitbar"><span style="width:84.6%"></span><span style="width:6.8%"></span></div><div class="barhead"><span class="green">Android · 84.6%</span><strong class="blue">iOS · 6.8%</strong></div><p>8.5% respondió “No sabe / No contestó”. Los porcentajes pueden no sumar 100% por redondeo.</p></article>
+<article class="card"><div class="tag">IFT · PRIMERA ENCUESTA 2021</div><h3>Disposición a cambiar de sistema</h3><div class="big">84.8%</div><p>No había considerado utilizar otro sistema operativo.</p><div class="splitbar"><span style="width:84.8%;background:#16864b"></span><span style="width:11.8%;background:#0878d1"></span><span style="width:3.4%;background:#aeb4bd"></span></div><div class="barhead"><span>No · 84.8%</span><strong>Sí · 11.8%</strong></div><p>3.4% respondió “No sabe / No contestó”. Entre quienes no consideraban cambiar, 55.3% dijo estar conforme con su sistema actual.</p></article>
+</div>
+<div class="callout"><h3>La marca también influye en la elección</h3><p>En el análisis de The CIU del 1T-2025, el reconocimiento de marca fue de 98.7% para Samsung, 96.3% para Motorola y 85.8% para Apple. La conversión de mercado —usuarios que conocen una marca y deciden adquirir un equipo de ella— fue de 26.3%, 20.7% y 19.9%, respectivamente.</p></div>
+<div class="grid3" style="margin-top:16px">
+<article class="card"><div class="tag">THE CIU · 1T 2025</div><div class="big">26.3%</div><h3>Samsung</h3><p>Conversión de mercado</p></article>
+<article class="card"><div class="tag">THE CIU · 1T 2025</div><div class="big">20.7%</div><h3>Motorola</h3><p>Conversión de mercado</p></article>
+<article class="card"><div class="tag">THE CIU · 1T 2025</div><div class="big blue">19.9%</div><h3>Apple</h3><p>Conversión de mercado</p></article>
+</div>
+<p class="smallnote">El dato de conversión corresponde a fabricantes, no a sistemas operativos. Samsung y Motorola utilizan Android; Apple utiliza iOS, pero estas tasas no deben sumarse ni interpretarse como cuota Android/iOS.</p>
+</section>
+
+<section id="acceso"><div class="section-head"><div class="num">03 / ACCESO DIGITAL</div><h2>El acceso digital es el contexto</h2><p>La ENDUTIH dimensiona el acceso a dispositivos y conectividad en México. Sus indicadores no identifican el sistema operativo de los teléfonos.</p></div>
+<div class="grid3">
+<article class="card"><div class="tag">ENDUTIH · 2025</div><div class="big">84.6%</div><h3>Usó teléfono celular</h3><p>Porcentaje de la población de seis años y más.</p></article>
+<article class="card"><div class="tag">ENDUTIH · 2025</div><div class="big">86.1%</div><h3>Utilizó internet</h3><p>Equivale a 104.9 millones de personas de seis años y más.</p></article>
+<article class="card"><div class="tag">BRECHA TERRITORIAL</div><div class="big gold">13.7%</div><h3>Urbano frente a rural</h3><p>88.9% de uso de internet en zonas urbanas y 75.2% en zonas rurales.</p></article>
+</div>
+<div class="callout"><h3>Acceso digital ≠ sistema operativo</h3><p>Estos porcentajes describen uso de celular e internet. No permiten distribuir a la población entre Android y iOS ni atribuirles las diferencias territoriales.</p></div>
+</section>
+
+<section id="mercado"><div class="section-head"><div class="num">04 / MERCADO Y CONSUMO</div><h2>El mercado también cuenta la historia</h2><p>La competencia entre sistemas ocurre dentro de un mercado de renovación, gasto y canales de compra.</p></div>
+<div class="grid4">
+<article class="card"><div class="big gold">35 M</div><h3>Equipos comercializados</h3><p>Smartphones vendidos en México durante 2025.</p></article>
+<article class="card"><div class="big gold">+7%</div><h3>Crecimiento anual</h3><p>Variación frente al volumen de 2024.</p></article>
+<article class="card"><div class="big gold">$5,009</div><h3>Gasto promedio</h3><p>Pesos por dispositivo durante 2025.</p></article>
+<article class="card"><div class="big gold">26 meses</div><h3>Ciclo de reemplazo</h3><p>Periodo promedio reportado para renovar el equipo.</p></article>
+</div>
+<div class="card" style="margin-top:16px"><div class="tag">CANALES DE VENTA · INGRESOS</div><h3>¿Dónde se compran los equipos?</h3><div class="splitbar"><span style="width:59%"></span><span style="width:41%"></span></div><div class="barhead"><span class="green">59% · Operadores móviles</span><strong class="blue">41% · Distribuidores</strong></div><p>Distribución de ingresos por canal de venta de equipos, según The CIU.</p></div>
+</section>
+
+<section id="preferencias"><div class="section-head"><div class="num">05 / PREFERENCIAS Y LEALTAD</div><h2>¿Por qué las personas permanecen?</h2><p>Una encuesta de SellCell ayuda a explorar la lealtad declarada, con una limitación importante: sus resultados corresponden a Estados Unidos, no a México.</p></div>
+<div class="note"><strong>Alcance de la encuesta:</strong> más de 5,000 personas adultas encuestadas en Estados Unidos, con representación de usuarios de iPhone y Android. Estos resultados no representan a consumidores mexicanos.</div>
+<div class="grid2">
+<article class="card" style="background:#112a46"><div class="tag blue">IPHONE</div><div class="big blue">96.4%</div><h3>Planea permanecer</h3><p>3.6% indicó intención de cambiar de sistema.</p></article>
+<article class="card" style="background:#102e29"><div class="tag green">ANDROID</div><div class="big green">86.4%</div><h3>Planea permanecer</h3><p>13.6% indicó intención de cambiar de sistema.</p></article>
+</div>
+<div class="grid2" style="margin-top:16px">
+<article class="card"><div class="tag">MOTIVO PRINCIPAL · ANDROID</div><div class="big green">58.0%</div><h3>Preferencia de marca</h3><p>Entre quienes indicaron intención de permanecer en Android, fue el motivo más mencionado.</p></article>
+<article class="card"><div class="tag">MOTIVO PRINCIPAL · IPHONE</div><div class="big blue">60.8%</div><h3>Preferencia de marca</h3><p>Entre quienes indicaron intención de permanecer en iPhone, fue el motivo más mencionado.</p></article>
+</div>
+<div class="callout"><h3>¿Por qué dejar iPhone?</h3><p>Entre quienes indicaron intención de cambiar: mejor valor en otra marca (25.8%), precio elevado del iPhone (24.7%), búsqueda de mejor tecnología (22.5%), preferencia por Android (14.6%) y otros motivos (12.4%).</p></div>
+<p class="smallnote">Los porcentajes de motivos corresponden a subgrupos de encuestados que indicaron intención de permanecer o cambiar; no al total de usuarios de cada sistema.</p>
+</section>
+
+<section><div class="section-head"><div class="num">06 / QUÉ ORIENTA EL DATO</div><h2>La participación es un punto de partida</h2><p>El dato puede orientar decisiones, siempre que se complemente con investigación específica.</p></div>
+<div class="grid4">
+<article class="card"><h3>Desarrollo</h3><p>Probar aplicaciones y experiencias en ambos sistemas, sin excluir a usuarios de la plataforma minoritaria.</p></article>
+<article class="card"><h3>Publicidad</h3><p>Segmentar con evidencia propia. No inferir ingresos, edad o intención de compra a partir del sistema operativo.</p></article>
+<article class="card"><h3>Fabricantes</h3><p>Investigar precio, disponibilidad, experiencia y servicio antes de atribuir motivos de elección.</p></article>
+<article class="card"><h3>Comercio</h3><p>Evaluar navegación, pagos y conversión móvil en Android e iOS con datos propios.</p></article>
+</div></section>
+
+
+<section id="equipos-por-gama"><div class="section-head"><div class="num">07 / SISTEMAS OPERATIVOS Y GAMA DE PRECIO</div><h2>Android también aparece en la oferta por segmentos</h2><p>El IFT analizó una muestra de equipos móviles disponibles y más solicitados a concesionarios en México. El reporte compara características de los equipos por precio; no es una encuesta de personas usuarias ni un conteo de ventas.</p></div>
+<div class="grid2">
+<article class="card"><div class="tag">MUESTRA IFT · 2023</div><div class="big green">100%</div><h3>Android en gama media</h3><p>Todos los equipos de la muestra de $1,000 a $5,999 tenían sistema operativo Android.</p></article>
+<article class="card"><div class="tag">MUESTRA IFT · 2023</div><div class="big green">100%</div><h3>Android en gama media alta</h3><p>Todos los equipos de la muestra de $6,000 a $9,000 tenían sistema operativo Android.</p></article>
+<article class="card"><div class="tag">MUESTRA IFT · 2023</div><div class="big green">65%</div><h3>Android en gama alta</h3><p>El 65% de los equipos de más de $9,000 tenía Android. El informe no identifica el sistema operativo del porcentaje restante; no debe interpretarse automáticamente como iOS.</p></article>
+<article class="card"><div class="tag">MUESTRA IFT · 2023</div><div class="big blue">67%</div><h3>Sistema operativo propio en gama baja</h3><p>En equipos de hasta $999, el 67% tenía sistema operativo propio. El reporte no permite atribuir el resto a Android o iOS.</p></article>
+</div>
+<div class="callout"><h3>¿Qué aporta este dato a la comparación?</h3><p>Permite observar que Android estaba presente en todos los equipos analizados de las gamas media y media alta, y en 65% de la gama alta. No permite calcular la proporción de personas usuarias de Android o iOS en México ni hacer un desglose por estado.</p></div>
+<p class="smallnote">Fuente: IFT, Reporte especial “Evolución de la oferta de equipos terminales móviles 2018–2023”, comunicado 002/2024, publicado el 8 de enero de 2024. La muestra se integró con información proporcionada por AT&amp;T, Movistar y Telcel sobre equipos disponibles y más solicitados.</p>
+</section>
+
+<section id="metodo"><div class="section-head"><div class="num">07 / MÉTODO Y FUENTES</div><h2>Cómo leer y verificar esta información</h2><p>Cada indicador conserva su año, geografía y universo de medición. Las fuentes no se mezclan como si midieran lo mismo.</p></div>
+<div class="source-list">
+<article class="card source"><div class="tag">PARTICIPACIÓN DE USO</div><h3>StatCounter GlobalStats</h3><p>México · octubre de 2026. Participación de uso móvil / web: Android 74.11% e iOS 25.89%.</p><a href="https://gs.statcounter.com/os-market-share/mobile-tab-/mexico" target="_blank" rel="noopener">Consultar serie de México ↗</a></article>
+<article class="card source"><div class="tag">ACCESO DIGITAL</div><h3>INEGI · ENDUTIH 2025</h3><p>Comunicado 32/26, publicado el 16 de junio de 2026. Uso de celular, internet y diferencias territoriales.</p><a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/endutih/ENDUTIH_25.pdf" target="_blank" rel="noopener">Consultar comunicado ↗</a></article>
+<article class="card source"><div class="tag">MERCADO DE SMARTPHONES</div><h3>The CIU</h3><p>Adquisición de smartphones en México: volumen comercializado, gasto promedio, ciclo de reemplazo y canales de venta.</p><a href="https://www.theciu.com/publicaciones-2/2026/3/23/adquisicin-de-smartphones-diversificacin-de-canales-mayor-gasto-y-frecuencia-de-compra" target="_blank" rel="noopener">Consultar análisis ↗</a></article>
+
+<article class="card source"><div class="tag">OFERTA DE EQUIPOS · 2018–2023</div><h3>IFT · Evolución de la oferta de equipos terminales móviles</h3><p>Reporte publicado en enero de 2024. Identifica sistemas operativos en una muestra de equipos por gama de precio; no representa porcentajes de población usuaria.</p><a href="https://www.ift.org.mx/sites/default/files/comunicacion-y-medios/comunicados-ift/comunicado2ift_0.pdf" target="_blank" rel="noopener">Consultar reporte del IFT ↗</a></article>
+<article class="card source"><div class="tag">MARCAS · CONVERSIÓN 1T 2025</div><h3>The CIU · Conocimiento de marca</h3><p>Reconocimiento y conversión de mercado para Samsung, Motorola y Apple en México. No equivale a cuota de sistemas operativos.</p><a href="https://www.theciu.com/publicaciones-2/2025/6/30/smartphones-en-mxico-conocimiento-de-marca-y-conversin-de-mercado" target="_blank" rel="noopener">Consultar análisis de The CIU ↗</a></article>
+<article class="card source"><div class="tag">CONTEXTO HISTÓRICO</div><h3>Bain &amp; Company</h3><p>Impacto económico y social de Android en México. Estudio de alrededor de 2020; no debe leerse como medición actual.</p><a href="https://www.bain.com/contentassets/a9200a057a0241b8963c05a9b09e33fe/impacto-economico-y-social-de-android-en-mexico-1.pdf" target="_blank" rel="noopener">Consultar documento ↗</a></article>
+</div>
+<div class="callout"><h3>Límites de interpretación</h3><p>StatCounter mide participación de uso web/móvil; ENDUTIH mide acceso y uso de tecnologías en población; The CIU analiza el mercado comercial; el IFT analiza una muestra de equipos por gama de precio. Son indicadores complementarios, no equivalentes.</p></div>
+</section>
+
+<div class="conclusion"><div><div class="eyebrow">La cifra no cuenta toda la historia</div><h2>Más contexto.<br>Mejores preguntas.</h2><p>Entender el mercado móvil exige mirar participación, acceso, consumo y preferencias sin confundir sus indicadores ni trasladar resultados de otros países a México.</p></div><a class="button" href="#inicio">Volver al inicio ↑</a></div>
+</main>
+<footer><div class="wrap credits"><strong>VISUALIZACIÓN DE DATOS · 2026</strong><br>Comunicación · Universidad La Salle<br><br>Romo Pérez Jorge Antonio · Padilla Rico Rebeca · Pérez Sánchez Renato</div></footer>
+
+<script>
+(() => {
+  const androidRange = document.getElementById('androidRange');
+  const sampleRange = document.getElementById('sampleRange');
+  if (!androidRange || !sampleRange) return;
+  const fmt = n => new Intl.NumberFormat('es-MX', {maximumFractionDigits:0}).format(n);
+  const pct = n => Number(n).toFixed(2) + '%';
+  function update() {
+    const a = Number(androidRange.value);
+    const i = 100 - a;
+    const total = Number(sampleRange.value);
+    const ac = Math.round(total * a / 100);
+    const ic = total - ac;
+    const gap = Math.abs(a - i);
+    const countGap = Math.abs(ac - ic);
+    document.getElementById('androidValue').textContent = pct(a);
+    document.getElementById('sampleValue').textContent = fmt(total);
+    document.getElementById('androidCount').textContent = fmt(ac);
+    document.getElementById('iosCount').textContent = fmt(ic);
+    document.getElementById('androidPct').textContent = pct(a);
+    document.getElementById('iosPct').textContent = pct(i);
+    document.getElementById('androidBar').style.width = a + '%';
+    document.getElementById('iosBar').style.width = i + '%';
+    document.getElementById('gapValue').textContent = pct(gap);
+    document.getElementById('countGap').textContent = fmt(countGap);
+    let lead = a > i ? 'Android' : (i > a ? 'iOS' : 'Ningún sistema');
+    let sentence = a === i
+      ? 'En este escenario hipotético, ambos sistemas tendrían la misma participación.'
+      : `En este escenario, ${lead} tendría aproximadamente ${fmt(countGap)} dispositivos más.`;
+    document.getElementById('scenarioText').textContent = sentence;
+  }
+  androidRange.addEventListener('input', update);
+  sampleRange.addEventListener('input', update);
+  document.querySelectorAll('.preset').forEach(btn => btn.addEventListener('click', () => {
+    androidRange.value = btn.dataset.value;
+    update();
+  }));
+  update();
+
+  document.querySelectorAll('.quiz-option').forEach(btn => btn.addEventListener('click', () => {
+    document.querySelectorAll('.quiz-option').forEach(option => option.classList.remove('selected-correct','selected-wrong'));
+    const correct = btn.dataset.correct === 'true';
+    btn.classList.add(correct ? 'selected-correct' : 'selected-wrong');
+    document.getElementById('quizFeedback').textContent = correct
+      ? '¡Exacto! 74.11% − 25.89% = 48.22 puntos porcentuales. No es un conteo de personas ni de millones de usuarios.'
+      : 'No exactamente. La cifra compara dos participaciones: 74.11% − 25.89% = 48.22 puntos porcentuales. No permite conocer cuántas personas usan cada sistema.';
+  }));
+})();
+</script>
+
+
+<div id="reading-progress" aria-hidden="true"><span></span></div>
+<script>
+(() => {
+  const progress = document.querySelector('#reading-progress span');
+  const updateProgress = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
+  };
+  window.addEventListener('scroll', updateProgress, {passive:true});
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+
+  document.querySelectorAll('.question-lead .eyebrow,.question-lead h2,.question-lead > p,.question-answer,.hero > div:first-child,.hero > div:last-child,main > section:not(.question-lead),main > .conclusion,footer')
+    .forEach(el => el.classList.add('js-reveal'));
+
+  document.querySelectorAll('.question-lens').forEach((el,i) => {
+    el.classList.add('js-reveal-child');
+    el.style.transitionDelay = (i * 150) + 'ms';
+  });
+
+  document.querySelectorAll('section:not(.question-lead) .card,section:not(.question-lead) .panel,section:not(.question-lead) .stat,section:not(.question-lead) .source')
+    .forEach((el,i) => {
+      el.classList.add('js-reveal-child');
+      el.style.transitionDelay = ((i % 4) * 95) + 'ms';
+    });
+
+  const observer = new IntersectionObserver((entries,obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -35px 0px'});
+
+  document.querySelectorAll('.js-reveal,.js-reveal-child').forEach(el => observer.observe(el));
+})();
+</script>
+
+
+<script>
+(function(){
+ const map=document.querySelector('.state-cartogram'); if(!map) return;
+ const buttons=[...map.querySelectorAll('.state-tile')];
+ const name=document.getElementById('state-name'), value=document.getElementById('state-value'), rank=document.getElementById('state-rank');
+ const sorted=buttons.map(b=>({name:b.dataset.state,value:Number(b.dataset.value)})).sort((a,b)=>b.value-a.value);
+ function selectState(btn){
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+  const v=Number(btn.dataset.value), n=btn.dataset.state;
+  name.textContent=n; value.textContent=v.toFixed(1)+'%';
+  const pos=sorted.findIndex(s=>s.name===n)+1;
+  rank.textContent=pos===1?'Mayor porcentaje entre las 32 entidades.':pos===32?'Menor porcentaje entre las 32 entidades.':'Lugar '+pos+' de 32 entidades por porcentaje de uso.';
+ }
+ buttons.forEach(btn=>btn.addEventListener('click',()=>selectState(btn)));
+ const initial=buttons.find(b=>b.dataset.state==='Ciudad de México'); if(initial) selectState(initial);
+})();
+</script>
+
+</body></html>
